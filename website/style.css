@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    background-color: #1d2a35;
+    /* kulay kang pinaka likod na bg */
+}
+
+h2.group, h4.title{
+    color: white;
+}
+
+hr{
+    border-color: #496686;
+    margin-bottom: 2.5%;
+}
+
+.content{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 525px;
+    background-color: #38444d;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.recent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+    white-space: nowrap;
+}
+
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+    white-space: nowrap;
+}
+
+.movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+    white-space: nowrap;
+}
+
+
+
+.group{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+}
+
+img {
+    width:  100%;
+    min-height: 90%;
+    object-fit: cover;
+}
+
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin: 10px;
+    white-space: wrap;
+}
+  
+.object{
+    margin: 10px;
+    text-align: center;
+    width: 140px;
+    transition: 0.3s;
+}
+
+.object:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s
+}
+
+.next, .prev {
+    cursor: pointer;
+    padding: 10px;
+    height: 30%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+}
+
+.next{
+    margin-right: 2%;
+}
+.prev{
+    margin-left: 2%;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(21, 32, 43);
+    overflow: auto;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+
+}
+
+.navbar a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: right;
+    text-align: center;
+    padding: 22px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+
+.nav-button i {
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: #3e8e41;
+}
+
+a.active1{
+    background-color: #3e8e41;
+}
+
+.active {
+    background-color: rgb(21, 32, 43);
+}
+
+.logo-bcolor{
+    background-color: #04aa6d;
+}
+.logo{
+    display: flex;
+}
+
+.dropbtn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 22px;
+    color: white;
+    background-color: rgb(21, 32, 43);
+    font-size: 17px;
+    border: 0px;
+    transition: 0.3s;
+}
+  
+
+.dropdown {
+  position: right;
+  display: inline-block;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  width: 11.5%;
+}
+  
+
+.dropdown-content a {
+  color: black;
+  padding: 22px;
+  text-decoration: none;
+  display: block;
+  float: none;
+  transition: 0.3s;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block; display: flex; flex-direction: column;}
+  
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 100px; 
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #04aa6d;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 100px;
+}
+

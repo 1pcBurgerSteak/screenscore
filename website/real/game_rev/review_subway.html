@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/website/css/review.css">
+    <link rel="stylesheet" href="/website/css/FontsAwesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/website/script.js"></script>
+    <script src="/website/js/jquery-min.js"></script>
+    <script src="/website/js/star_rating.js"></script>
+    
+    <title>Subway Surfers</title>
+</head>
+<body>
+    <div class="bgbgbg4">
+    <div class="navbar">
+        <div class="logo-container" style="float: left;">
+            <div class="logo">
+                <img src="/website/image/page/logo_text_nobg.png" alt="Screen Score" style="margin-left: 30px;">
+            </div>
+        </div>
+        <div class="nav-container">
+            <div class="nav-button">
+                <a class="active" href="/website/real/about.html"><i class="fa-solid fa-address-card"></i>About</a>
+            </div>
+    
+            <div class="nav-button">
+                <a class="active" href="/website/real/help.html"><i class="fa-solid fa-question"></i>Help</a>
+            </div>
+    
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-icons fa-fw" style="margin-right: 10px;"></i>Category<i class="fa-solid fa-caret-down" style="margin-left: 10px;"></i></button>
+                    <div class="dropdown-content">
+                      <a href="/website/real/category_games.html"><i class="fa-solid fa-gamepad" style="margin-right: 10px; justify-content: center;"></i>Games</a>
+                      <a href="/website/real/category_movies.html"><i class="fa-solid fa-film" style="margin-right: 10px; justify-content: center;"></i>Movies</a>
+                    </div>
+            </div>
+
+    
+            <div class="nav-button">
+                <a class="active" href="/website/real/home.html"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="margin">
+            <div class="image-ls">
+                <img src="/website/image/games/game-ls/subway.png" alt="Clash of Clans">
+            </div>
+            <div class="info-container">
+                <div class="infos">
+                    <div class="title">
+                        <h1 style="color: #c6d4df;">
+                            Subway Surfers
+                        </h1>
+                    </div>
+                    <div class="screenscore">
+                        <h3 style="margin-bottom: 5%; color: #c6d4df;">
+                            Screenscore
+                        </h3>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                    </div>
+                    <div class="userscore">
+                        <h3 style="margin-bottom: 5%; color: #c6d4df;">
+                            Userscore
+                        </h3>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                        <span class="fa fa-star checked" style="font-size: 20px;"></span>
+                    </div>
+                    <div class="myscore">
+                        <h3 style="margin-bottom: 0px; color: #c6d4df;">
+                            My Score
+                        </h3>
+                        
+                        <div class="star-value">
+                            <div class="stars">
+                                <span class="rating_stars rating_0">
+                                <span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                <span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                <span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                <span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                <span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                                      
+                                <span class='r r0_5' data-rating='1' data-value='0.5'></span>
+                                <span class='r r1' data-rating='1' data-value='1'></span>
+                                <span class='r r1_5' data-rating='15' data-value='1.5'></span>
+                                <span class='r r2' data-rating='2' data-value='2'></span>
+                                <span class='r r2_5' data-rating='25' data-value='2.5'></span>
+                                <span class='r r3' data-rating='3' data-value='3'></span>
+                                <span class='r r3_5' data-rating='35' data-value='3.5'></span>
+                                <span class='r r4' data-rating='4' data-value='4'></span>
+                                <span class='r r4_5' data-rating='45' data-value='4.5'></span>
+                                <span class='r r5' data-rating='5' data-value='5'></span>
+                              </span>
+                            </div>
+    
+                            <div class="values">
+                                <div>
+                                    <input type="text" name="rating" id="rating_val" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description" >
+        <div class="description-text">
+            Description
+            <br><hr>
+            Subway Surfers is a single player mobile gaming app and website developed by Kiloo. The aim of the game is to outrun a train inspector while dodging oncoming trains, barriers and other objects. Collecting coins on the way gives players advantages such as hover boards and high scores.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

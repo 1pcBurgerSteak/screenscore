@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    background-image: url(/website/image/page/bg-home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    align-content: center;
+    height: 100vh;
+    background-color: #1d2a35;
+    opacity: 0.9;
+}
+
+.margin{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    margin-bottom: 10%;
+}
+
+.logo:hover{
+    transform: scale(1.4);
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    background-color: rgb(21, 32, 43);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: #3e8e41;
+}

@@ -1,0 +1,642 @@
+body{
+    margin: 0px;
+}
+
+.margin{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(21, 32, 43);
+    overflow: auto;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+
+}
+
+.navbar a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: right;
+    text-align: center;
+    padding: 22px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+
+.nav-button i {
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: #3e8e41;
+}
+  
+.active {
+    background-color: rgb(21, 32, 43);
+}
+
+.logo-bcolor{
+    background-color: #04aa6d;
+}
+.logo{
+    display: flex;
+}
+
+.dropbtn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 22px;
+    color: white;
+    background-color: rgb(21, 32, 43);
+    font-size: 17px;
+    border: 0px;
+    transition: 0.3s;
+}
+  
+
+.dropdown {
+  position: right;
+  display: inline-block;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  width: 11.5%;
+}
+  
+
+.dropdown-content a {
+  color: black;
+  padding: 22px;
+  text-decoration: none;
+  display: block;
+  float: none;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block; display: flex; flex-direction: column;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.image-ls {
+    width: 672px;
+    height: 378px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.image-ls img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-container{
+    background-color: #38444d;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.infos{
+    margin-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+}
+
+.title{
+    margin-top: 3%;
+}
+
+.title h1{
+    margin-top: 0px;
+}
+
+.fa{
+    font-size: 25px;
+}
+/* si star sa userscore tas screenscore*/
+.checked{
+    color: #feb645;
+    font-size: 25px;
+}
+/* si interactive na star */
+.star-value{
+    display: flex;
+    align-items: center;
+}
+
+.rating_stars {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    color: #918f8f;
+    position: relative;
+}
+
+.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
+	display: none;
+}
+
+.rating_stars span .fa-star-o{
+	display: inline-block;
+}
+
+.rating_stars span.s.active-high .fa-star{
+	display: inline-block; color: #feb645;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o{
+	display: inline-block; color: #feb645;
+}
+
+.rating_stars span.r {
+	position: absolute;
+	top: 0;
+	height: 20px;
+	width: 10px;
+	left: 0;
+}
+
+.rating_stars span.r.r0_5 {left:0px;}
+.rating_stars span.r.r1 {left:10px; width: 11px;}
+.rating_stars span.r.r1_5 {left:21px; width: 13px;}
+.rating_stars span.r.r2 {left:34px; width: 12px;}
+.rating_stars span.r.r2_5 {left:46px; width: 12px;}
+.rating_stars span.r.r3 {left:58px; width: 11px;}
+.rating_stars span.r.r3_5 {left:69px; width: 12px;}
+.rating_stars span.r.r4 {left:81px; width: 12px;}
+.rating_stars span.r.r4_5 {left:93px; width: 12px;}
+.rating_stars span.r.r5 {left:105px; width: 12px;}
+
+
+label {width: 100px;display: inline-block; text-align: left; margin-right: 10px;}
+input {width: 50px; height: 50px; border-radius: 50%; border: 0px; margin-left: 25%; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: xx-large;}
+.info {max-width: 500px; margin: 20px auto;}
+
+/* si description ni */
+.description{
+    margin-top: 2%;
+    margin-left: 15%;   
+    margin-right: 15%;
+    background-color:#38444d;
+    border-radius: 15px;
+}
+
+.description-text{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #c6d4df;
+}
+.bgbgbg{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+}
+.bgbgbg::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/batman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg1{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg1::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/clash_of_clans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg2{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg2::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/hollow\ knight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg3{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg3::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/ssx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg4{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg4::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/subway.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg5{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg5::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/swordigo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg6{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg6::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/tlos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg7{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg7::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/tekken.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg8{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg8::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/warframe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.bgbgbg9{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.bgbgbg9::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/games/game-ls/BLOXFRUIT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/ANGRYBIRDS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg1{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg1::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/barbie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+
+.moviebg2{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg2::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/blade_runner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg3{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg3::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/drive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg4{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg4::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/fnaf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg5{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg5::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/greenbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+.moviebg6{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg6::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/lala_land.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg7{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg7::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/rpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg8{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg8::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/star_wars.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+.moviebg9{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+
+}
+.moviebg9::before {
+    margin: 0%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/website/image/movies/movie-ls/tom_and_jerry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+
+
