@@ -1,11 +1,12 @@
 body{
     margin: 0px;
+    line-height: normal;
 }
 
 .margin{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     justify-content: center;
 }
@@ -119,6 +120,7 @@ body{
     background-color: #38444d;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    padding-right: 10%;
 }
 
 .infos{
@@ -128,6 +130,7 @@ body{
 
 .title{
     margin-top: 3%;
+    line-height: normal;
 }
 
 .title h1{
@@ -142,10 +145,20 @@ body{
     color: #feb645;
     font-size: 25px;
 }
+
+.myscore{
+    width: 120%;
+}
+
 /* si interactive na star */
 .star-value{
     display: flex;
     align-items: center;
+}
+
+.values{
+    position: absolute;
+    margin-left: 10%;
 }
 
 .rating_stars {
